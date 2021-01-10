@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.barteksc.pdfviewer;
+package com.github.webtaculars.pdfviewer;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -36,32 +36,32 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.RelativeLayout;
 
-import com.github.barteksc.pdfviewer.exception.PageRenderingException;
-import com.github.barteksc.pdfviewer.link.DefaultLinkHandler;
-import com.github.barteksc.pdfviewer.link.LinkHandler;
-import com.github.barteksc.pdfviewer.listener.Callbacks;
-import com.github.barteksc.pdfviewer.listener.OnDrawListener;
-import com.github.barteksc.pdfviewer.listener.OnErrorListener;
-import com.github.barteksc.pdfviewer.listener.OnLoadCompleteListener;
-import com.github.barteksc.pdfviewer.listener.OnLongPressListener;
-import com.github.barteksc.pdfviewer.listener.OnPageChangeListener;
-import com.github.barteksc.pdfviewer.listener.OnPageErrorListener;
-import com.github.barteksc.pdfviewer.listener.OnPageScrollListener;
-import com.github.barteksc.pdfviewer.listener.OnRenderListener;
-import com.github.barteksc.pdfviewer.listener.OnTapListener;
-import com.github.barteksc.pdfviewer.model.PagePart;
-import com.github.barteksc.pdfviewer.scroll.ScrollHandle;
-import com.github.barteksc.pdfviewer.source.AssetSource;
-import com.github.barteksc.pdfviewer.source.ByteArraySource;
-import com.github.barteksc.pdfviewer.source.DocumentSource;
-import com.github.barteksc.pdfviewer.source.FileSource;
-import com.github.barteksc.pdfviewer.source.InputStreamSource;
-import com.github.barteksc.pdfviewer.source.UriSource;
-import com.github.barteksc.pdfviewer.util.Constants;
-import com.github.barteksc.pdfviewer.util.FitPolicy;
-import com.github.barteksc.pdfviewer.util.MathUtils;
-import com.github.barteksc.pdfviewer.util.SnapEdge;
-import com.github.barteksc.pdfviewer.util.Util;
+import com.github.webtaculars.pdfviewer.exception.PageRenderingException;
+import com.github.webtaculars.pdfviewer.link.DefaultLinkHandler;
+import com.github.webtaculars.pdfviewer.link.LinkHandler;
+import com.github.webtaculars.pdfviewer.listener.Callbacks;
+import com.github.webtaculars.pdfviewer.listener.OnDrawListener;
+import com.github.webtaculars.pdfviewer.listener.OnErrorListener;
+import com.github.webtaculars.pdfviewer.listener.OnLoadCompleteListener;
+import com.github.webtaculars.pdfviewer.listener.OnLongPressListener;
+import com.github.webtaculars.pdfviewer.listener.OnPageChangeListener;
+import com.github.webtaculars.pdfviewer.listener.OnPageErrorListener;
+import com.github.webtaculars.pdfviewer.listener.OnPageScrollListener;
+import com.github.webtaculars.pdfviewer.listener.OnRenderListener;
+import com.github.webtaculars.pdfviewer.listener.OnTapListener;
+import com.github.webtaculars.pdfviewer.model.PagePart;
+import com.github.webtaculars.pdfviewer.scroll.ScrollHandle;
+import com.github.webtaculars.pdfviewer.source.AssetSource;
+import com.github.webtaculars.pdfviewer.source.ByteArraySource;
+import com.github.webtaculars.pdfviewer.source.DocumentSource;
+import com.github.webtaculars.pdfviewer.source.FileSource;
+import com.github.webtaculars.pdfviewer.source.InputStreamSource;
+import com.github.webtaculars.pdfviewer.source.UriSource;
+import com.github.webtaculars.pdfviewer.util.Constants;
+import com.github.webtaculars.pdfviewer.util.FitPolicy;
+import com.github.webtaculars.pdfviewer.util.MathUtils;
+import com.github.webtaculars.pdfviewer.util.SnapEdge;
+import com.github.webtaculars.pdfviewer.util.Util;
 import com.shockwave.pdfium.PdfDocument;
 import com.shockwave.pdfium.PdfiumCore;
 import com.shockwave.pdfium.util.Size;
